@@ -7,9 +7,10 @@ $('#edit-product-form').on('submit',function(e){
     var productImageLink = $( "#product-image-link" ).val();
 
     $.ajax({
-        url: "https://stairsprojectproduction.azurewebsites.net/api/products",
+        url: "https://stairsprojectproduction.azurewebsites.net/api/products/"+ localStorage.getItem("vOneLocalStorage"),
         type: 'PUT',
         data: JSON.stringify({
+            "Id": localStorage.getItem("vOneLocalStorage"),
             "Name": productName,
             "Desc": productDesc,
             "Price": productPrice,
@@ -26,3 +27,4 @@ $('#edit-product-form').on('submit',function(e){
         }
     });
 });
+

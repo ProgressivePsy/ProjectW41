@@ -35,7 +35,7 @@ function CreateProduct(post) {
         "<td>" + post.price + "</td>" +
         "<td>" + post.type + "</td>" +
         "<td>" +
-        "<a class='edit-button' href='https://www.popsci.com/sites/popsci.com/files/styles/655_1x_/public/images/2018/03/senna.jpg?itok=4dsvu7gl&fc=50,50'>EDIT</a>"+
+        "<a class='edit-button' onclick='setId("+post.id+")'>EDIT</a>"+
         "<a class='remove-button' onclick='removeProduct("+post.id+")'>REMOVE</a>" +
         "</td>" +
         "</tr>";
@@ -54,4 +54,9 @@ function removeProduct(id) {
             handleException(request, message, error);
         }
     });
+}
+
+function setId(id) {
+    localStorage.setItem("vOneLocalStorage", id);
+    window.location.href ='admin-edit.html';
 }
