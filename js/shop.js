@@ -50,11 +50,43 @@ function CreateProduct(post) {
         "<p>"+post.price+"</p>\n" +
         "</div>\n" +
         "<div id=\"product_buy\">\n" +
-        "<p><a href=\"#\">ADD TO CART</a>\n" +
+        "<p><a href="+post.id+">SHOW MORE</a>\n" +
         "</p>\n" +
         "</div>\n" +
         "</div>\n" +
         "</div>";
-
     return product;
 }
+
+/*
+function loadProductPage(post) {
+    var product =
+        "<section id=\"product_area\"> +
+        "<div class=\"product\"> +
+        "<div id=\"product_img\"> +
+        "<img src="+post.imageLink+" alt=\"\"> +
+        "</div> +
+        <div id="product_title">
+        <h2>ESCAPE YOUR CHILD</h2>
+    </div>
+    <div id="product_desc">
+        <p>
+        Good quality shit stairs fresh from the labour camps in China, only worked on by Apple approved child workers.
+    <br><br>
+    This stair in particularly excells in escaping the sticky fingers of your disgusting child, the steep design will<br> either have them fall down or not be able to follow you, for the parent who is sick of their child.
+    </p>
+    </div>
+    <div id="product_shop_buy">
+        <div id="product_price">
+        <p>PRICE:2.000.000$</p>
+    </div>
+    <div id="product_buy">
+        <p><a href="product_info.html">ADD TO CART</a>
+    </p>
+    </div>
+    </div>
+    </div>
+    </section>
+    }
+    */
+
