@@ -64,7 +64,7 @@ function setId(id) {
 
 function pageDown() {
     if(pageNo>0) {
-        pageNo = pageNo = 1;
+        pageNo = pageNo-1;
         $("#product_area").empty();
         postList();
     }
