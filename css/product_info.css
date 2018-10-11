@@ -137,11 +137,6 @@ transition: 0.2ms;
 #product_area {
   margin: 0 auto;
   width:70%;
-  grid-gap: 40px;
-  grid-column: 1/13;
-  display: grid;
-  grid-template-rows: repeat(3, minmax(200px, auto));
-  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
 }
 
 .product {

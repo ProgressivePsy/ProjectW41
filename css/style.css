@@ -13,8 +13,7 @@ body {
   "mn mn mn mn mn mn mn mn mn mn mn mn"
   "ft ft ft ft ft ft ft ft ft ft ft ft";
   background-repeat: no-repeat;
-  background: url(bstair.png);
-  background-size: auto 100%;
+  
 }
 header {
   grid-area: hd;
@@ -37,6 +36,7 @@ main{
   grid-template-columns: repeat(auto-fit,minmax(300px,auto)); 
   margin-top: 50px;
   margin-bottom: 100px;
+  padding: 30px;
 }
 #image {
   display: flex;
@@ -45,12 +45,16 @@ main{
   width: 653px;
   height: auto;
   margin: 10px;
+  margin-left: 130px;
 }
 #image2 img {
-  width: 653px;
+  width: 653px; 
   height: auto;
   margin: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
+
 nav {
   display: flex;
   flex-grow:1;
