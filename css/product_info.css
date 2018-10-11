@@ -148,6 +148,10 @@ transition: 0.2ms;
   border-radius: 10px;
   box-shadow: 3px 54px 80px -45px #333333;
 }
+
+.product img {
+  max-width: 100%;
+}
   #product_img {
     padding: 20px 0 5px 0;
   }
