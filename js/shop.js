@@ -17,15 +17,12 @@ function postList() {
 }
 
 function postListSuccess(posts) {
-
     $.each(posts, function (index, post) {
-
         postAddProducts(post);
     });
 }
 
 function postAddProducts(post) {
-
 
     $("#product_area").append(
         CreateProduct(post));
