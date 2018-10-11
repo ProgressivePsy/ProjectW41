@@ -51,6 +51,7 @@ main{
   height: auto;
   margin: 10px;
 }
+
 nav {
   display: flex;
   flex-grow:1;
