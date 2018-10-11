@@ -2,9 +2,10 @@ $(window).on('load', function() {
     postList();
 });
 
+var pageNo=1;
 function postList() {
     $.ajax({
-        url: 'https://stairsprojectproduction.azurewebsites.net/api/products',
+        url: 'https://stairsprojectproduction.azurewebsites.net/api/products?currentPage='+pageNo+'&itemsPrPage=3',
         type: 'GET',
         dataType: 'json',
         success: function (posts) {
@@ -27,6 +28,7 @@ function postAddProducts(post) {
     $("#product_area").append(
         CreateProduct(post));
 }
+
 function CreateProduct(post) {
     var product =
 
@@ -55,11 +57,21 @@ function CreateProduct(post) {
     return product;
 }
 
-var globalVariable;
 function setId(id) {
     localStorage.setItem("vOneLocalStorage", id);
-     globalVariable={
-        x: id
-    };
     window.location.href ='product_info.html';
+}
+
+function pageDown() {
+    if(pageNo>0) {
+        pageNo = pageNo = 1;
+        $("#product_area").empty();
+        postList();
+    }
+}
+
+function pageUp() {
+    pageNo=pageNo+1;
+    $("#product_area").empty();
+    postList();
 }
