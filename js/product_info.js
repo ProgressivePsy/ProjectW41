@@ -1,5 +1,4 @@
 $(window).on('load', function() {
-   // var id = alert(globalVariable.x);
    getProductById()
 });
 
@@ -16,6 +15,7 @@ function getProductById() {
         }
     });
 }
+
 function postAddProducts(post) {
         $("#product_area").append(
             CreateProduct(post));

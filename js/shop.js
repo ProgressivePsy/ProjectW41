@@ -27,6 +27,7 @@ function postAddProducts(post) {
     $("#product_area").append(
         CreateProduct(post));
 }
+
 function CreateProduct(post) {
     var product =
         "<div id='"+post.id+"' class=\"product\" >\n" +
@@ -54,11 +55,7 @@ function CreateProduct(post) {
     return product;
 }
 
-var globalVariable;
 function setId(id) {
     localStorage.setItem("vOneLocalStorage", id);
-     globalVariable={
-        x: id
-    };
     window.location.href ='product_info.html';
 }
