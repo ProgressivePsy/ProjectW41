@@ -37,7 +37,7 @@ function CreateProduct(post) {
         "</div>\n" +
         "<div id=\"product_shop_buy\">\n" +
         "<div id=\"product_price\">\n" +
-        "<p>"+post.price+"</p>\n" +
+        "<p>"+post.price+ ' €' +" </p>\n" +
         "</div>\n" +
         "<div id=\"product_buy\">\n" +
         "<p><a href=\"product_info.html\">ADD TO CART</a>\n" +
