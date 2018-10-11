@@ -134,7 +134,7 @@ transition: 0.2ms;
 
 
 #product_area {
-  margin-left: 2.2%;
+  margin-left: 1.5%;
     width: 100%;
 }
 
@@ -153,7 +153,7 @@ transition: 0.2ms;
     text-align: center;
     border-radius: 10px;
     float: left;
-    margin: 2%;
+    margin: 1.5%;
     min-width: 400px;
 }
   #product_img {
