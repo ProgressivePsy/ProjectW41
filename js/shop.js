@@ -30,8 +30,9 @@ function postAddProducts(post) {
 
 function CreateProduct(post) {
     var product =
-        "<div id='"+post.id+"' class=\"product\" >\n" +
-        "<div id=produkt_image>\n" +
+
+        "<div id='"+post.id+"' class=\"product\">\n" +
+        "<div class=product_image>\n" +
         "<img height='250' src="+post.imageLink+" alt=\"\"> \n" +
         "</div>\n" +
         "<div id=\"product_title\">\n" +
@@ -44,7 +45,7 @@ function CreateProduct(post) {
         "</div>\n" +
         "<div id=\"product_shop_buy\">\n" +
         "<div id=\"product_price\">\n" +
-        "<p>"+post.price+"</p>\n" +
+        "<p>"+post.price+" €"+"</p>\n" +
         "</div>\n" +
         "<div id=\"product_buy\">\n" +
         "<p><a onclick='setId("+post.id+")'>SHOW MORE</a>\n" +

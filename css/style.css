@@ -44,15 +44,13 @@ main{
 #image1 img {
   width: 653px;
   height: auto;
-  margin: 10px;
-  margin-left: 130px;
+  margin-right: 70px;
+
 }
 #image2 img {
   width: 653px; 
   height: auto;
-  margin: 10px;
-  margin-left: 100px;
-  margin-right: 100px;
+
 }
 
 nav {
@@ -72,20 +70,22 @@ nav a:hover{
 
 .search {
     margin-bottom:10px;
-  
-}
+
+  }
 .search input {
-    margin-top: 10px;
-    size: 50px;
-    font-size: 17px;
-    
+  margin-top: 10px;
+  size: 50px;
+  font-size: 15px;
+  width: 200px;
+
 }
 .search button {
   float: right;
-  margin-top: 11px;
+  margin-top: 10px;
   margin-right: 17px;
-  background: #ddd;
-  font-size: 19px;
+  background: #fff;
+  font-size: 18px;
+  color: #313786;
   border: none;
   cursor: pointer;
 }
@@ -102,7 +102,8 @@ footer {
   color: #ddd;
   width: 90% ;
   display: flex;
-  flex-direction: row;  
+  flex-direction: row;
+  padding-bottom: 30px;
 }
 #footerbottom {
   color: #ddd;
@@ -115,13 +116,13 @@ footer {
   display: flex;
   margin: 0;
   margin-top: 50px;
-  padding: 10 10;
+  padding: 10px 10px;
 }
 #ps p {
   color: #ddd;
   display: flex;
   margin: 0;
-  padding: 10 10;
+  padding: 10px 10px;
 }
 
 #footer_social_box {
