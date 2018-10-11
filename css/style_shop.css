@@ -135,6 +135,7 @@ transition: 0.2ms;
 
 #product_area {
   margin-left: 2.2%;
+    width: 100%;
 }
 
 .product_image img {
@@ -239,3 +240,4 @@ transition: 0.2ms;
     border: none;
     cursor: pointer;
 }
+
