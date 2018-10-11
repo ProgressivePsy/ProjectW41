@@ -35,12 +35,8 @@ function CreateProduct(post) {
         "<td>" + post.price + "</td>" +
         "<td>" + post.type + "</td>" +
         "<td>" +
-        "<a href=\"https://www.popsci.com/sites/popsci.com/files/styles/655_1x_/public/images/2018/03/senna.jpg?itok=4dsvu7gl&fc=50,50\">" +
-        "<div>Edit</div>" +
-        "</a>" +
-        "<a onclick='removeProduct("+post.id+")'>" +
-        "<div >REMOVE</div>" +
-        "</a>" +
+        "<a class='edit-button' href='https://www.popsci.com/sites/popsci.com/files/styles/655_1x_/public/images/2018/03/senna.jpg?itok=4dsvu7gl&fc=50,50'>EDIT</a>"+
+        "<a class='remove-button' onclick='removeProduct("+post.id+")'>REMOVE</a>" +
         "</td>" +
         "</tr>";
     return product;

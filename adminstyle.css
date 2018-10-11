@@ -6,21 +6,26 @@ h1{
 
 
 table.blueTable {
-    border: 1px solid #1C6EA4;
-    background-color: #EEEEEE;
-    width: 65%;
-    text-align: left;
-    border-collapse: collapse;
+  border: 1px solid #1C6EA4;
+  background-color: #EEEEEE;
+  width: 90%;
+  text-align: left;
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-top: 43px;
+  /* padding: 10px 20px; */
+  border: 2px solid #313786;
   }
+
   table.blueTable td, table.blueTable th {
-    border: 1px solid #AAAAAA;
+    border: 1px solid #AAA;
     padding: 3px 2px;
   }
   table.blueTable tbody td {
     font-size: 20px;   
   }
   table.blueTable tr:nth-child(even) {
-    background: #D0E4F5;
+    background-color: #3137863b;
   }
   table.blueTable thead {
     background: #1C6EA4;
@@ -30,24 +35,65 @@ table.blueTable {
     border-bottom: 2px solid #444444;
   }
   table.blueTable thead th {
-    font-size: 24px;
+    font-size: 19px;
+    text-align: center;
     font-weight: bold;
+    height: 48px;
     color: #FFFFFF;
-    border-left: 2px solid #D0E4F5;
+    background-color: #313786;
+
   }
   table.blueTable thead th:first-child {
     border-left: none;
   }
-  div 
-  {
-  height: 35px;
-  width: 60px;
+
+  tr {
+    height: 50px;
   }
-  #box_1{
-    font-size: 30px;
-    background-color: rgb(255, 255, 255);
-    border: 5px solid #000090;
-    padding:10px;
-    background-color:lightblue;
-  }
- 
+
+
+#headline {
+  font-size: 30px;
+  color: #313786;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#button-add-new {
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  border: 1px solid #313786 ;
+  background-color: #313786;
+  border-radius: 10px;
+  padding: 7px 15px;
+  text-decoration: none;
+
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+
+}
+
+.remove-button {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #313786 ;
+  background-color: #313786;
+  border-radius: 10px;
+  padding: 5px 7px;
+  font-size: 12px;
+}
+
+.edit-button {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #313786 ;
+  background-color: #313786;
+  border-radius: 10px;
+  padding: 5px 7px;
+  margin-right: 5px;
+  font-size: 12px;
+}
