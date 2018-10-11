@@ -135,7 +135,7 @@ transition: 0.2ms;
 
 #product_area {
   margin: 0 auto;
-  width: calc(100% - 100px);
+  width:20%;
   grid-gap: 40px;
   grid-column: 1/13;
   display: grid;
@@ -191,35 +191,3 @@ transition: 0.2ms;
           border: 1px solid #5271ff;
 
       }
-      .button { 
-        grid-area: mn;
-        grid-row: 12;
-      }
-      .button #next {
-        text-decoration: none;
-        color: #ffffff;
-        background-color: rgba(82, 113, 253, 0.466);
-        border: 1px solid #ffffff;
-        Padding: 5px 10px;
-        height: 15px;
-     }
-      .button #next:hover {
-            background-color: #ffffff86;
-            color: #5271ff;
-            border: 1px solid #5271ff;
-  
-        }
-        .button #previous {
-          text-decoration: none;
-          color: #ffffff;
-          background-color: rgba(82, 113, 253, 0.466);
-          border: 1px solid #ffffff;
-          Padding: 5px 10px;
-          height: 15px;
-       }
-        .button #previous:hover {
-              background-color: #ffffff86;
-              color: #5271ff;
-              border: 1px solid #5271ff;
-    
-          }
