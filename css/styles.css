@@ -1,0 +1,233 @@
+body {
+    background-image: url("http://byfinesse.com.au/wp-content/uploads/schody-orginal_size-18001200.jpg");
+    display:grid;
+    grid-template-columns: repeat(6, auto);
+    grid-template-rows:  115px 500px 100px;
+    margin: 0;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd hd hd hd"
+    "mn mn mn mn mn mn mn mn mn mn mn mn"
+    "ft ft ft ft ft ft ft ft ft ft ft ft"
+    ;
+
+}
+
+header {
+    background-color: #556681ad;
+    grid-column: span 6; 
+    display: flex; 
+    height: 50%;
+    margin-top: 30px;
+}
+#logo {
+    flex-grow: 0.5;
+}
+
+#logo img {
+    height:120px; 
+    margin: -25px 0 0 100px;
+    
+
+}
+nav {
+    font-family: Arial, Helvetica, sans-serif;
+    align-content: center;
+    flex-grow: 2;
+}
+
+li {
+    padding: 0 25px 0 25px;
+    border-right: 1px solid white;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+ul {
+    list-style: None;
+    display: flex;
+}
+
+li:last-child {
+    border-right:none;
+}
+main {
+    grid-column: span 6;
+    grid-rows: span 500px;
+    display: flex;
+    background-color: #556681ad;
+}
+main {
+    grid-area: mn;
+    display: grid;
+    grid-template-rows: repeat(3, minmax(200px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+
+ }
+ #info_box {
+     grid-column: 12 span;
+     
+ }
+ #product_area {
+     margin: 0 auto;
+     width: calc(100% - 100px);
+     display: grid;
+     grid-template-rows: repeat(3, minmax(200px, auto));
+     grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+     grid-column: 12 span;
+     grid-gap: 40px;
+}
+
+ /* Product section */
+
+ .product {
+     color: #ffffff;
+     display:flex;
+     flex-direction: column;
+     text-align: center;
+ }
+     #product_img {
+         background-color: #ffffff;
+         padding: 20px 0 20px 0;
+     }
+     .product #product_img img {
+         width: 60%;
+         background-size: contain;
+     }
+     .product #product_title {
+         text-transform: uppercase;
+         color: #333333;
+         text-shadow: 1px 1px 2px #ffffff;
+         font-size: 14px;
+         font-weight: 800;
+         padding: 10px 0 10px 0;
+     }
+     .product p {
+
+     }
+     .product #product_desc {
+         font-size: 11px;
+         padding: 10px 0 20px 0; 
+       }
+     .product #product_shop_buy {
+         display: flex;
+         justify-content: center;
+     }  
+     .product #product_price {
+       padding: 0 15px 0 0;
+          }
+     .product #product_buy {
+
+       }
+       .product #product_buy a {
+         text-decoration: none;
+         color: #24e8d4;
+         border: 1px solid #ffffff;
+         Padding: 5px 10px;
+      }
+         .product #product_buy a:hover {
+             background-color: #999999;
+             color: #ffffff;
+             border: 1px solid #24e8d4;
+
+         }
+  
+ /*
+ div[id^='product']{
+ background-color:#ffffff;
+ 
+ }
+*/
+
+
+
+ @media only screen and (max-width: 960px) {
+ body {
+   background-color: #ededed;
+   grid-template-columns: 1fr;
+   grid-template-rows: repeat(3, minmax(200px, auto));
+   width: 100%;
+   grid-template-areas: 
+   "hd"
+   "mn"
+   "ft"
+   ;
+ }
+ 
+ #product_area {
+ 
+  grid-template-columns: repeat(2, minmax(200px, auto));
+ display: grid;
+ }
+ .product {
+     color: orange;
+ }
+
+ }
+
+ @media only screen and (max-width: 620px) {
+     body {
+        
+     }
+     #product_area{
+         grid-template-columns: repeat(1, minmax(100px, auto));
+         }
+         .product {
+             color: #ffffff;
+         }
+ }
+
+
+.topnav {
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Style the "active" element to highlight the current page */
+.topnav a.active {
+    color: white;
+}
+
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+    float: right;
+    padding: 6px;
+    border: none;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 17px;
+}
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+    .topnav a, .topnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
