@@ -1,15 +1,21 @@
 var filter;
+var filt =3;
 
 $(window).on('load', function() {
-    postList();
-     filter = localStorage.getItem("productTypeStorage");
+    filter = localStorage.getItem("productTypeStorage");
     localStorage.setItem("productTypeStorage", "Q");
+    if (filter=="N"||filter=="D")
+    {
+        filt=10;
+    }
+    postList();
+
 });
 
 var pageNo=1;
 function postList() {
     $.ajax({
-        url: 'https://stairsprojectproduction.azurewebsites.net/api/products?currentPage='+pageNo+'&itemsPrPage=3',
+        url: 'https://stairsprojectproduction.azurewebsites.net/api/products?currentPage='+pageNo+'&itemsPrPage='+filt,
         type: 'GET',
         dataType: 'json',
         success: function (posts) {
