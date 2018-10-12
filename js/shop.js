@@ -1,5 +1,9 @@
+var filter;
+
 $(window).on('load', function() {
     postList();
+     filter = localStorage.getItem("productTypeStorage");
+    localStorage.setItem("productTypeStorage", "Q");
 });
 
 var pageNo=1;
@@ -18,9 +22,20 @@ function postList() {
 }
 
 function postListSuccess(posts) {
+    if (filter=="Q")
+    {
     $.each(posts, function (index, post) {
         postAddProducts(post);
     });
+}
+else
+    {
+        $.each(posts, function (index, post) {
+            if(post.type==filter) {
+                postAddProducts(post);
+            }
+        });
+    }
 }
 
 function postAddProducts(post) {
